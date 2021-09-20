@@ -96,7 +96,7 @@ RUN npm run build -- Static
 
 # Clone and build pagegraph crawl
 WORKDIR /home/docker/
-RUN git clone git@github.com:silverfoxy/pagegraph-crawl.git
+RUN git clone https://github.com/silverfoxy/pagegraph-crawl.git
 WORKDIR /home/docker/pagegraph-crawl/
 RUN npm install
 
