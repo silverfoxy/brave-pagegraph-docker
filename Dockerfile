@@ -110,4 +110,4 @@ USER root
 RUN mkdir -p /tmp/.X11-unix
 
 # Mount logs volume
-VOLUME ./logs:/home/docker/logs
+VOLUME ./logs /home/docker/logs
