@@ -10,6 +10,10 @@ ARG PW=docker
 RUN useradd -m ${USER} --uid=${UID} && echo "${USER}:${PW}" | \
       chpasswd
 
+# Install vim
+RUN ["apt-get", "update"]
+RUN ["apt-get", "install", "-y", "vim"]
+
 # Install dependencies
 RUN apt update &&\
     apt install -y \
